@@ -1,0 +1,188 @@
+# DS 2024-2025 — Programmation et raisonnement
+
+[⬅ Examens](../README.md) · [Mes réponses](mes-reponses.md)
+
+> ⏱️ **Conditions réelles** : aucun document, chronomètre. Le temps de chaque question est indicatif et proportionnel aux points.
+> La rédaction compte : couleurs, structure claire. Une structure de preuve complète, même avec des cas non traités, est valorisée.
+
+| Q | Thème | Temps |
+|---|---|---|
+| 1.1 | `consB` et longueur | 10 min |
+| 1.2 | `nth` : récursion terminale + version itérative | 6 min |
+| 1.3 | `nth` et `consB` | 16 min |
+| 1.4 | `nth` et concaténation (1) | 16 min |
+| 1.5 | `nth` et concaténation (2) | 16 min |
+| 1.6 | Arbres de mots binaires en Python objet | 16 min |
+| 1.7 | `tbNth` | 40 min |
+| 2.1 → 2.5 | Indice maximum du maximum (boucle) | 60 min |
+
+---
+
+## Exercice 1 : Démonstration par induction
+
+Un **mot binaire** est une liste de booléens :
+
+```haskell
+type MB = [Bool]          -- ex. : [], [True,False], [False,False,False]
+```
+
+### Q1.1 (10 min) — Ajout de bit et longueur
+
+```haskell
+consB :: Bool -> [MB] -> [MB]       -- ajoute b en tête de chaque mot
+consB b []       = []
+consB b (mb:mbs) = (b:mb) : (consB b mbs)
+
+length :: [a] -> Int
+length []    = 0
+length (_:l) = 1 + length l
+```
+
+**Pré** : aucune · **Post** : `length (consB b l) = length l` · **Variant** : `length l`
+
+Expliquer pourquoi `length l` peut servir de variant, puis démontrer.
+
+### Q1.2 (6 min) — n-ième élément
+
+```haskell
+nth :: Int -> [MB] -> MB
+nth 0 (mb:_) = mb
+nth n (_:ls) = nth (n-1) ls
+```
+
+- (2 min) Justifier que `nth` est **récursive terminale**.
+- (4 min) Version **itérative** Python (méthode du cours), avec les tranches `l[i:j]`, `l[i:]`, `l[:i]`.
+
+### Q1.3 (16 min) — `nth` et `consB`
+
+**Pré** : `0 ≤ n < length l` · **Post** : `nth n (consB b l) = b : (nth n l)` · **Variant** : `n`
+
+Expliquer pourquoi `n` peut servir de variant, puis démontrer.
+
+### Q1.4 (16 min) — `nth` et concaténation (1)
+
+```haskell
+(++) :: [a] -> [a] -> [a]
+[]     ++ l = l
+(a:as) ++ l = a : (as ++ l)
+```
+
+**Pré** : `0 ≤ n < length l1` · **Post** : `nth n (l1 ++ l2) = nth n l1` · **Variant** : `n`
+
+### Q1.5 (16 min) — `nth` et concaténation (2)
+
+**Pré** : `length l1 ≤ n < length l1 + length l2` · **Post** : `nth n (l1 ++ l2) = nth (n − length l1) l2` · **Variant** : `n`
+
+---
+
+### Arbres de mots binaires
+
+```haskell
+data TMB = N | T Bool Int TMB TMB
+```
+
+- `N` : l'ensemble **vide** ;
+- `T b k t1 t2` : contient le mot vide **ssi** `b = True` ; `k` = nombre de mots dans `t1` et `t2` ; contient `False : mb1` pour chaque `mb1` de `t1` et `True : mb2` pour chaque `mb2` de `t2`.
+
+```text
+                    ⊤,4
+              F ┌────┴────┐ T
+               ⊥,3       ⊤,0
+          F ┌───┴───┐ T   / \
+           ⊤,0     ⊤,1   N   N
+           / \  F ┌─┴─┐ T
+          N   N  ⊤,0   N
+                 / \
+                N   N
+```
+
+(`⊤, k` : contient le mot vide ; `⊥, k` : ne le contient pas ; `k` : nombre de mots des enfants. `F` = fils gauche `t1` (mots qui commencent par `False`), `T` = fils droit `t2` (par `True`).)
+
+```haskell
+card :: TMB -> Int                      -- nombre de mots
+card N = 0
+card (T b n _ _) | b         = n + 1
+                 | otherwise = n
+
+tbList :: TMB -> [MB]                   -- liste des mots
+tbList N = []
+tbList (T b k t1 t2)
+  | b         = [] : (consB False (tbList t1)) ++ (consB True (tbList t2))
+  | otherwise =      (consB False (tbList t1)) ++ (consB True (tbList t2))
+```
+
+Pour l'arbre dessiné : `card t = 5` et
+
+```text
+tbList t = [ [], [False,False], [False,True], [False,True,False], [True] ]
+```
+
+> ℹ️ Le sujet d'origine écrit `[False,False,False]` comme 2ᵉ mot : d'après l'arbre (et `tbNth 3 t`), c'est `[False,False]`.
+
+**Arbre bien formé** : `card t = length (tbList t)` et, si `t = T b k t1 t2`, `t1` et `t2` sont bien formés. (`N` est bien formé.)
+
+```haskell
+tbNth :: Int -> TMB -> MB               -- n-ième mot (à partir de 0)
+tbNth 0 (T True k t1 t2) = []
+tbNth n (T True k t1 t2)  | card t1 > n-1 = False : tbNth (n-1) t1
+                          | otherwise     = True  : tbNth (n-1-card t1) t2
+tbNth n (T False k t1 t2) | card t1 > n   = False : tbNth n t1
+                          | otherwise     = True  : tbNth (n-k) t2
+```
+
+Exemple : `tbNth 3 t = [False,True,False]`.
+
+> ⚠️ Dans la dernière ligne, `n-k` semble être une coquille pour `n - card t1` (avec `n < card t = k`, `n − k` serait négatif). Signale-le dans ta copie si tu traites ce cas.
+
+### Q1.6 (16 min) — Implémentation objet
+
+Implémentation Python (méthode du cours) avec les méthodes `card`, `tbList`, `tbNth`. Le `__init__` de `T` doit **calculer** le `k` à partir des deux sous-arbres.
+
+### Q1.7 (40 min) — Trouver le n-ième mot
+
+```haskell
+taille :: TMB -> Int
+taille N = 0
+taille (T _ _ t1 t2) = 1 + taille t1 + taille t2
+```
+
+**Pré** : `0 ≤ n < card t` et `t` bien formé · **Post** : `tbNth n t = nth n (tbList t)` · **Variant** : `taille t` (admis : toujours défini et ≥ 0)
+
+Ne traiter que ces 3 cas :
+1. `n = 0` et `t = T True k t1 t2`
+2. `n ≠ 0`, `t = T False k t1 t2` et `card t1 > n`
+3. `n ≥ 0`, `t = T False k t1 t2` et `card t1 ≤ n`
+
+---
+
+## Exercice 2 : L'indice maximum du maximum
+
+Calcule le **plus grand indice** contenant la **plus grande valeur** de `t`.
+
+```python
+r = 0
+i = 1
+while i < len(t):
+    if t[i] >= t[r]:
+        r = i
+    i = i + 1
+```
+
+| | |
+|---|---|
+| **Pré** | `len(t) > 0` |
+| **P1(r)** | `0 ≤ r < len(t)` |
+| **P2(r)** | pour tout `0 ≤ k < len(t)` : (P21) `t[k] ≤ t[r]` et (P22) `t[k] = t[r]` ⇒ `k ≤ r` |
+| **I1(r, i)** | `0 ≤ r < i ≤ len(t)` |
+| **I2(r, i)** | pour tout `0 ≤ k < i` : (I21) `t[k] ≤ t[r]` et (I22) `t[k] = t[r]` ⇒ `k ≤ r` |
+| **Variant** | `len(t) − i` |
+
+| Q | Temps | Ce qu'on demande |
+|---|---|---|
+| 2.1 | 5 min | **Succès du corps** : WP de `⊤`, puis la prouver |
+| 2.2 | 5 min | **Variant** : WP de `i = x` ; décroissance et positivité |
+| 2.3 | 30 min | **Invariant** : WP de `I(r, i)` à travers le corps, puis la prouver |
+| 2.4 | 10 min | **Pré-condition** : WP de `I(r, i)` à travers l'initialisation |
+| 2.5 | 10 min | **Post-condition** après la boucle |
+
+> 💡 Comparer avec la démonstration du **plus petit indice du minimum** ([C6](../../01-Cours/C6-Tableaux/demonstrations.md)) : même structure, mais ici `>=` fait garder le **dernier** indice.
