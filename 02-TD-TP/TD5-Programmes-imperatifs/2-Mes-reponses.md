@@ -1,6 +1,6 @@
 # TD5 — Mes réponses
 
-[⬅ Énoncé](enonce.md) · Méthode : [F3 WP](../../04-Fiches-revision/F3-Plus-faible-precondition.md) · [F4 Boucles](../../04-Fiches-revision/F4-Methode-boucles.md)
+[⬅ Énoncé](1-Enonce.md) · Méthode : [F3 WP](../../04-Fiches-revision/F3-Plus-faible-precondition.md) · [F4 Boucles](../../04-Fiches-revision/F4-Methode-boucles.md)
 
 ## Exercice 1 : Plus faible pré-condition
 

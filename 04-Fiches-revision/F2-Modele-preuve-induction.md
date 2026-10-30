@@ -1,6 +1,8 @@
 # F2 — Modèle de preuve par induction
 
-[⬅ Fiches](README.md)
+[🏠 Accueil](../00-Commencer-ici.md)
+
+> 🧍🧍🧍 **L'idée :** comme dans une file d'attente, je m'appuie sur les cas **plus petits** (hypothèse d'induction) pour traiter le mien. Le **variant** est le compte à rebours qui garantit qu'on arrive au bout.
 
 ## 📝 Le modèle à recopier
 

@@ -1,6 +1,6 @@
 # F6 — Pièges et errata
 
-[⬅ Fiches](README.md)
+[🏠 Accueil](../00-Commencer-ici.md)
 
 ## ⚠️ Les 12 erreurs les plus coûteuses
 
@@ -28,7 +28,7 @@ Ces coquilles ont été **corrigées** dans les fiches du dossier (les PDF d'ori
 | Cours induction (diapo factorielle) | « lorsque son argument vaut 0, `factoriel n` renvoie 0 » | renvoie **1** |
 | Cours listes (tri rapide) | `[0,2,4] ++ triRapide [6,4,9]` dans la trace | `triRapide [6,4]` |
 | Cours arbres (arbres préfixes) | `estElement (trouve c l) cs` | `trouve l c` (ordre des arguments) |
-| `logique.py` du cours | méthodes indentées dans `__init__`, `self.Prop`, `&&`, `\|\|`, `return Faux`, types `Int`/`Bool` | version corrigée et testée : [logique.py](../01-Cours/C4-Arbres/code/logique.py) |
+| `logique.py` du cours | méthodes indentées dans `__init__`, `self.Prop`, `&&`, `\|\|`, `return Faux`, types `Int`/`Bool` | version corrigée et testée : [logique.py](../01-Cours/Chapitre-4-Arbres/code/logique.py) |
 | Notes « tableaux » (insertion) | `l' = l[j-1 -> l[i], j -> l[j-1]]` | `l[j-1 -> l[j], j -> l[j-1]]` |
 | Notes « récursion terminale » (`revAux`) | « Par C1 » dans le cas C2 | « Par C2 » |
 | TD1 | `a = 2*(a quot b) + a mod b` | `b = 2*(b quot 2) + b mod 2` |

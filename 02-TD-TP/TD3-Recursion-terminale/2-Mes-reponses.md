@@ -1,6 +1,6 @@
 # TD3 — Mes réponses
 
-[⬅ Énoncé](enonce.md) · Modèle : [F2](../../04-Fiches-revision/F2-Modele-preuve-induction.md)
+[⬅ Énoncé](1-Enonce.md) · Modèle : [F2](../../04-Fiches-revision/F2-Modele-preuve-induction.md)
 
 ## Exercice 1 : Exponentiation rapide terminale
 

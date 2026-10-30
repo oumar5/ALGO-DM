@@ -1,6 +1,6 @@
 # TD6 — Programmes impératifs et tableaux
 
-[⬅ TD / TP](../README.md) · Cours : [C6 Tableaux](../../01-Cours/C6-Tableaux/README.md) · [Mes réponses](mes-reponses.md) · [Code](code/td6.py)
+[🏠 Accueil](../../00-Commencer-ici.md) · Cours : [C6 Tableaux](../../01-Cours/Chapitre-6-Tableaux/1-Cours.md) · [Mes réponses](2-Mes-reponses.md) · [Code](code/td6.py)
 
 ## 🎯 Objectifs
 
@@ -17,6 +17,8 @@ flowchart LR
 ---
 
 ## Exercice 1 : La dichotomie
+
+> 🧠 **En clair :** chercher un mot dans un **dictionnaire** 📖 : on l'ouvre au milieu ; si le mot est avant, on garde la moitié gauche, sinon la moitié droite. `g` et `d` sont les deux mains qui tiennent la partie qui reste.
 
 Recherche de `v` dans un tableau `t` **trié par ordre croissant**. À la fin : `r = −1` (absent) ou `t[r] = v`.
 
@@ -74,6 +76,8 @@ Trois branches : `g` augmente, ou `d` diminue, ou `r` passe de `−1` à `m ≥ 
 ---
 
 ## Exercice 2 : Pairs à gauche, impairs à droite
+
+> 🧠 **En clair :** deux mains rangent une étagère. La main gauche (`g`) avance tant qu'elle voit un nombre pair. Quand elle tombe sur un impair, elle l'**échange** avec la case de la main droite (`d`), qui recule. On s'arrête quand les mains se croisent.
 
 ```python
 g = 0

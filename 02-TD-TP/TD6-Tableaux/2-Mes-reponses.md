@@ -1,6 +1,6 @@
 # TD6 — Mes réponses
 
-[⬅ Énoncé](enonce.md) · Méthode : [F4 Boucles](../../04-Fiches-revision/F4-Methode-boucles.md)
+[⬅ Énoncé](1-Enonce.md) · Méthode : [F4 Boucles](../../04-Fiches-revision/F4-Methode-boucles.md)
 
 ## Exercice 1 : Dichotomie
 

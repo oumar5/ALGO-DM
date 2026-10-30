@@ -1,6 +1,6 @@
 # TD4 — Mes réponses
 
-[⬅ Énoncé](enonce.md) · Modèle : [F2](../../04-Fiches-revision/F2-Modele-preuve-induction.md) · Notations : [F5](../../04-Fiches-revision/F5-Axiomes-et-notations.md)
+[⬅ Énoncé](1-Enonce.md) · Modèle : [F2](../../04-Fiches-revision/F2-Modele-preuve-induction.md) · Notations : [F5](../../04-Fiches-revision/F5-Axiomes-et-notations.md)
 
 ## Exercice 1 : Tournois
 

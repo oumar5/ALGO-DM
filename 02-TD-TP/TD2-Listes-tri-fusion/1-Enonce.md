@@ -1,6 +1,6 @@
 # TD2 — Induction sur les listes : tri fusion
 
-[⬅ TD / TP](../README.md) · Cours : [C2 Listes](../../01-Cours/C2-Listes/README.md) · [Mes réponses](mes-reponses.md) · [Code](code/td2.py)
+[🏠 Accueil](../../00-Commencer-ici.md) · Cours : [C2 Listes](../../01-Cours/Chapitre-2-Listes/1-Cours.md) · [Mes réponses](2-Mes-reponses.md) · [Code](code/td2.py)
 
 ## 🎯 Objectifs
 
@@ -24,6 +24,8 @@
 ---
 
 ## Exercice 1 : Tri fusion
+
+> 🧠 **En clair :** pour ranger un gros paquet de copies à deux, on le **coupe en deux**, chacun range sa moitié, puis on **fusionne** les deux paquets rangés en prenant à chaque fois la copie la plus petite du dessus.
 
 ```haskell
 separe :: [Int] -> [Int] -> ([Int], [Int])
@@ -83,7 +85,7 @@ Un cas par équation de `separe`. Attention : le cas `separe [] _` ne s'applique
 
 <details><summary>💡 Piste Q1.2.3</summary>
 
-Quatre cas. La preuve est rédigée dans [C3 — démonstrations](../../01-Cours/C3-Recursion-terminale/demonstrations.md) : essaie d'abord seul !
+Quatre cas. La preuve est rédigée dans [C3 — démonstrations](../../01-Cours/Chapitre-3-Recursion-terminale/2-Exemples-corriges.md) : essaie d'abord seul !
 
 </details>
 
@@ -96,6 +98,8 @@ Dans le 3ᵉ cas, `n = length l ≥ 2`. Par Q1.1.3 : `length l1 = n quot 2 < n` 
 ---
 
 ## Exercice 2 : PGCD par facteurs premiers
+
+> 🧠 **En clair :** `36 = 2·2·3·3` et `60 = 2·2·3·5`. Les briques **communes** sont `2, 2, 3`, donc le PGCD vaut `12`. C'est comme comparer deux listes de courses **rangées** pour trouver les articles en commun : on avance dans celle qui a le plus petit article.
 
 Un nombre est représenté par la liste triée de ses facteurs premiers : `36` ↦ `[2,2,3,3]`.
 

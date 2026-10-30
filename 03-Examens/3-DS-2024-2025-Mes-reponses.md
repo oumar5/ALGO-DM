@@ -1,6 +1,6 @@
 # DS 2024-2025 — Mes réponses
 
-[⬅ Énoncé](enonce.md) · Modèles : [F2](../../04-Fiches-revision/F2-Modele-preuve-induction.md) · [F4](../../04-Fiches-revision/F4-Methode-boucles.md)
+[⬅ Énoncé](2-DS-2024-2025-Enonce.md) · Modèles : [F2](../04-Fiches-revision/F2-Modele-preuve-induction.md) · [F4](../04-Fiches-revision/F4-Methode-boucles.md)
 
 > Temps réellement passé : ……
 

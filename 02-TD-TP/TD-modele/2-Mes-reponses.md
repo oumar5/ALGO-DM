@@ -1,6 +1,6 @@
 # TDx — Mes réponses
 
-[⬅ Énoncé](enonce.md)
+[⬅ Énoncé](1-Enonce.md)
 
 > Modèles : [preuve par induction](../../04-Fiches-revision/F2-Modele-preuve-induction.md) · [boucles](../../04-Fiches-revision/F4-Methode-boucles.md)
 

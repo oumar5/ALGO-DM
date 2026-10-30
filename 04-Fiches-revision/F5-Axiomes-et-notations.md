@@ -1,6 +1,6 @@
 # F5 — Axiomes et notations
 
-[⬅ Fiches](README.md)
+[🏠 Accueil](../00-Commencer-ici.md)
 
 ## Listes triées et permutations
 
@@ -19,11 +19,11 @@
 
 | Propriété | Où |
 |---|---|
-| `l ++ [] = l` | [C2](../01-Cours/C2-Listes/demonstrations.md) |
-| `l1 ++ (l2 ++ l3) = (l1 ++ l2) ++ l3` | [C2](../01-Cours/C2-Listes/demonstrations.md) |
-| `length (l1 ++ l2) = length l1 + length l2` | [C2](../01-Cours/C2-Listes/README.md) |
-| ordonnées + `l1 ≤ l2` ⇒ `l1 ++ l2` ordonnée | [C2](../01-Cours/C2-Listes/demonstrations.md) |
-| `revAux l acc = reverse l ++ acc` | [C3](../01-Cours/C3-Recursion-terminale/demonstrations.md) |
+| `l ++ [] = l` | [C2](../01-Cours/Chapitre-2-Listes/2-Exemples-corriges.md) |
+| `l1 ++ (l2 ++ l3) = (l1 ++ l2) ++ l3` | [C2](../01-Cours/Chapitre-2-Listes/2-Exemples-corriges.md) |
+| `length (l1 ++ l2) = length l1 + length l2` | [C2](../01-Cours/Chapitre-2-Listes/1-Cours.md) |
+| ordonnées + `l1 ≤ l2` ⇒ `l1 ++ l2` ordonnée | [C2](../01-Cours/Chapitre-2-Listes/2-Exemples-corriges.md) |
+| `revAux l acc = reverse l ++ acc` | [C3](../01-Cours/Chapitre-3-Recursion-terminale/2-Exemples-corriges.md) |
 
 ## Ensembles et multi-ensembles
 

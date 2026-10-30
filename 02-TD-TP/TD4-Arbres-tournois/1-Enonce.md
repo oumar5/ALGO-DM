@@ -1,6 +1,6 @@
 # TD4 — Structures arborescentes : les tournois
 
-[⬅ TD / TP](../README.md) · Cours : [C4 Arbres](../../01-Cours/C4-Arbres/README.md) · [Mes réponses](mes-reponses.md) · [Code](code/td4.py)
+[🏠 Accueil](../../00-Commencer-ici.md) · Cours : [C4 Arbres](../../01-Cours/Chapitre-4-Arbres/1-Cours.md) · [Mes réponses](2-Mes-reponses.md) · [Code](code/td4.py)
 
 ## 🎯 Objectifs
 
@@ -49,6 +49,8 @@ match t1 t2 | vainqueur t1 <= vainqueur t2 = M (vainqueur t1) t1 t2
 
 ## Exercice 1 : La structure tournoi
 
+> 🧠 **En clair :** un tableau de **tournoi de tennis** 🎾. Le joueur au plus petit score gagne chaque match. `delMin`, c'est le **champion qui se retire** : on rejoue seulement les matchs qu'il avait gagnés, pour trouver le nouveau champion.
+
 | Q | Ce qu'on demande |
 |---|---|
 | 1.1 | Montrer : si `t1` et `t2` sont bien formés, `match t1 t2` l'est. |
@@ -80,6 +82,8 @@ Cas 1 : `t1 = J _` ; par bonne formation, `k = vainqueur t1` donc `⟦t1⟧ = {|
 ---
 
 ## Exercice 2 : Le tri par tas-tournoi
+
+> 🧠 **En clair :** pour classer tous les joueurs, on organise **un tournoi**, on retire le champion (1ᵉʳ), on trouve le nouveau champion (2ᵉ), et ainsi de suite.
 
 ```mermaid
 flowchart LR

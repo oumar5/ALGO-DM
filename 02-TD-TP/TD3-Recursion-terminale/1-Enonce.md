@@ -1,6 +1,6 @@
 # TD3 — Récursion terminale
 
-[⬅ TD / TP](../README.md) · Cours : [C3 Récursion terminale](../../01-Cours/C3-Recursion-terminale/README.md) · [Mes réponses](mes-reponses.md) · [Code](code/td3.py)
+[🏠 Accueil](../../00-Commencer-ici.md) · Cours : [C3 Récursion terminale](../../01-Cours/Chapitre-3-Recursion-terminale/1-Cours.md) · [Mes réponses](2-Mes-reponses.md) · [Code](code/td3.py)
 
 ## 🎯 Objectifs
 
@@ -12,6 +12,8 @@
 ---
 
 ## Exercice 1 : Exponentiation rapide terminale
+
+> 🧠 **En clair :** c'est l'exponentiation rapide du TD1, mais avec une **calculatrice** (`acc`) qui garde le résultat partiel. À tout moment : `acc × aᵇ` = le résultat final.
 
 ```haskell
 expAux :: Int -> Int -> Int -> Int
@@ -44,6 +46,8 @@ Une seule ligne : `expR a b = expAux a b 1 = 1 × aᵇ` d'après Q1.2. Pas besoi
 ---
 
 ## Exercice 2 : Insertion triée terminale
+
+> 🧠 **En clair :** pour glisser une carte `k` dans une main rangée, on fait passer les cartes plus petites dans **l'autre main** (`acc`, dans l'ordre inverse). Quand on trouve la place de `k`, on la pose et on **remet** les cartes de l'autre main (`revAux`).
 
 ```haskell
 revAux :: [Int] -> [Int] -> [Int]

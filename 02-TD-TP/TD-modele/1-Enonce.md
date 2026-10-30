@@ -1,12 +1,16 @@
 # TDx — Titre
 
-[⬅ TD / TP](../README.md) · Cours lié : [Cx](../../01-Cours/README.md)
+[🏠 Accueil](../../00-Commencer-ici.md) · Cours lié : [Chapitre x](../../00-Commencer-ici.md) · [Mes réponses](2-Mes-reponses.md) · [Code](code/mon_code.py)
+
+> ✏️ **Mode d'emploi :** copie ce dossier, renomme-le (par exemple `TD7-Mon-theme`), puis remplace les `…`.
 
 ## 🎯 Objectifs
 
 - …
 
 ## Exercice 1 : …
+
+> 🧠 **En clair :** une image de la vie réelle pour comprendre l'exercice.
 
 ```haskell
 -- code de l'énoncé

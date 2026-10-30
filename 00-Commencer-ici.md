@@ -1,81 +1,91 @@
-# 🧠 Programmation et raisonnement — L2 Informatique
+# 🧭 Commencer ici — Programmation et raisonnement (L2)
 
-> **Le but du module en une phrase :** apprendre à **démontrer** qu'un programme fait bien ce qu'il doit faire.
-> Enseignant : Sylvain Salvati — Université de Lille.
+## Le module en une phrase
 
-## 🗺️ Le module en un coup d'œil
+> On apprend à **être sûr** qu'un programme fait ce qu'il doit faire, **sans avoir à le tester sur toutes les valeurs**.
+
+**Une image pour tout le module.** Un pont : on ne le teste pas en faisant passer tous les camions du monde. L'ingénieur fait un **calcul** qui **prouve** que le pont tient. Ici, on fait pareil avec les programmes.
+
+## 📖 Dans quel ordre lire ?
+
+Les dossiers et les fichiers sont **numérotés** : il suffit de suivre les numéros.
 
 ```mermaid
 flowchart LR
-    subgraph P1["Partie 1 : programmes récursifs (Haskell)"]
-        C1["C1 Induction"] --> C2["C2 Listes"] --> C3["C3 Récursion terminale"] --> C4["C4 Arbres"]
-    end
-    subgraph P2["Partie 2 : programmes impératifs (Python)"]
-        C5["C5 Plus faible pré-condition et boucles"] --> C6["C6 Tableaux"]
-    end
-    C4 --> C5
+    A["01-Cours<br/>apprendre"] --> B["02-TD-TP<br/>s'entraîner"] --> C["03-Examens<br/>se tester"]
+    D["04-Fiches-revision<br/>réviser vite"]
 ```
 
-**L'idée qui relie tout le cours :** programmer et prouver, c'est la même démarche.
+Chaque chapitre contient **deux fichiers** :
 
-| Quand je programme… | …quand je prouve |
+| Fichier | Rôle |
 |---|---|
-| le cas d'arrêt | le cas de base |
-| l'appel récursif sur une donnée **plus petite** | l'hypothèse d'induction sur une valeur **plus petite** |
-| ce qui diminue à chaque appel ou à chaque tour | le **variant** |
-| ce qui reste vrai à chaque tour de boucle | l'**invariant** |
-| les entrées autorisées / le résultat attendu | la **pré-condition** / la **post-condition** |
+| `1-Cours.md` | l'explication, avec des exemples de la vie réelle |
+| `2-Exemples-corriges.md` | des démonstrations expliquées ligne par ligne, à refaire seule |
 
-## 📁 Organisation
+## 🗓️ Le programme, semaine par semaine
 
-| Dossier | Contenu | Usage |
+| Semaine | Chapitre | L'image à retenir | TD |
+|---|---|---|---|
+| 1 | [Prouver par induction](01-Cours/Chapitre-1-Prouver-par-induction/1-Cours.md) | 🍬 partager des bonbons · 🚀 compte à rebours | [TD1](02-TD-TP/TD1-Induction-numerique/1-Enonce.md) |
+| 2 | [Listes](01-Cours/Chapitre-2-Listes/1-Cours.md) | 🚂 un train de wagons | [TD2](02-TD-TP/TD2-Listes-tri-fusion/1-Enonce.md) |
+| 3 | [Récursion terminale](01-Cours/Chapitre-3-Recursion-terminale/1-Cours.md) | 🧮 compter de tête au lieu de noter sur des post-it | [TD3](02-TD-TP/TD3-Recursion-terminale/1-Enonce.md) |
+| 4 | [Arbres](01-Cours/Chapitre-4-Arbres/1-Cours.md) | 🎾 un tableau de tournoi · 📁 les dossiers de l'ordinateur | [TD4](02-TD-TP/TD4-Arbres-tournois/1-Enonce.md) |
+| 5 | [Programmes impératifs](01-Cours/Chapitre-5-Programmes-imperatifs/1-Cours.md) | ⏰ calculer son heure de départ à partir de l'heure d'arrivée | [TD5](02-TD-TP/TD5-Programmes-imperatifs/1-Enonce.md) |
+| 6 | [Tableaux](01-Cours/Chapitre-6-Tableaux/1-Cours.md) | 🥚 une boîte d'œufs numérotée | [TD6](02-TD-TP/TD6-Tableaux/1-Enonce.md) |
+
+## 🔑 Les 5 mots du module
+
+Ce sont toujours les mêmes, du premier au dernier chapitre :
+
+| Mot | En clair | Dans la vie réelle |
 |---|---|---|
-| [01-Cours](01-Cours/README.md) | 6 chapitres : un cours court + des démonstrations détaillées | **Apprendre** |
-| [02-TD-TP](02-TD-TP/README.md) | Énoncés des TD + **ton espace de travail** (réponses, code) | **S'entraîner** |
-| [03-Examens](03-Examens/README.md) | DS 2024-2025 + méthode pour le jour J | **Se tester** |
-| [04-Fiches-revision](04-Fiches-revision/README.md) | Modèles de rédaction, règles, pièges | **Réviser vite** |
+| **Pré-condition** | ce que l'on suppose sur les entrées | « mettre une capsule dans la machine à café » |
+| **Post-condition** | ce que le programme garantit | « on obtient un café » |
+| **Variant** | un nombre ≥ 0 qui baisse à chaque étape, donc le calcul s'arrête | un compte à rebours |
+| **Hypothèse d'induction** | « je suppose que ça marche pour les cas plus petits » | dans une file d'attente, chacun s'appuie sur les personnes devant lui |
+| **Invariant** | ce qui reste vrai à chaque tour de boucle | « argent dépensé + argent restant = budget de départ » |
 
-## 🚀 Méthode de travail (chaque semaine)
+## 🧭 Quelle méthode pour quelle question ?
 
 ```mermaid
-flowchart LR
-    A["1 Lire le cours"] --> B["2 Auto-test en bas du cours"]
-    B --> C["3 Refaire une démonstration seul"]
-    C --> D["4 Faire le TD dans mes-reponses.md"]
-    D --> E["5 Relire la fiche de révision"]
+flowchart TD
+    Q{"Qu'est-ce que je dois prouver ?"} --> R["une fonction Haskell<br/>qui s'appelle elle-même"]
+    Q --> B["un code Python<br/>avec une boucle while"]
+    Q --> S["un code Python<br/>sans boucle"]
+    R --> F2["Fiche F2<br/>preuve par induction"]
+    B --> F4["Fiche F4<br/>méthode des boucles"]
+    S --> F3["Fiche F3<br/>plus faible pré-condition"]
 ```
 
-| Semaine | Cours | TD | Fiche utile |
-|---|---|---|---|
-| 1 | [C1 Induction](01-Cours/C1-Induction/README.md) | [TD1](02-TD-TP/TD1-Induction-numerique/enonce.md) | [F2 Modèle de preuve](04-Fiches-revision/F2-Modele-preuve-induction.md) |
-| 2 | [C2 Listes](01-Cours/C2-Listes/README.md) | [TD2](02-TD-TP/TD2-Listes-tri-fusion/enonce.md) | [F5 Axiomes et notations](04-Fiches-revision/F5-Axiomes-et-notations.md) |
-| 3 | [C3 Récursion terminale](01-Cours/C3-Recursion-terminale/README.md) | [TD3](02-TD-TP/TD3-Recursion-terminale/enonce.md) | [F1 Haskell ↔ Python](04-Fiches-revision/F1-Haskell-et-Python.md) |
-| 4 | [C4 Arbres](01-Cours/C4-Arbres/README.md) | [TD4](02-TD-TP/TD4-Arbres-tournois/enonce.md) | [F5 Axiomes et notations](04-Fiches-revision/F5-Axiomes-et-notations.md) |
-| 5 | [C5 Programmes impératifs](01-Cours/C5-Programmes-imperatifs/README.md) | [TD5](02-TD-TP/TD5-Programmes-imperatifs/enonce.md) | [F3 Plus faible pré-condition](04-Fiches-revision/F3-Plus-faible-precondition.md) |
-| 6 | [C6 Tableaux](01-Cours/C6-Tableaux/README.md) | [TD6](02-TD-TP/TD6-Tableaux/enonce.md) | [F4 Méthode des boucles](04-Fiches-revision/F4-Methode-boucles.md) |
+Les fiches : [F1 Haskell et Python](04-Fiches-revision/F1-Haskell-et-Python.md) · [F2 Preuve par induction](04-Fiches-revision/F2-Modele-preuve-induction.md) · [F3 Plus faible pré-condition](04-Fiches-revision/F3-Plus-faible-precondition.md) · [F4 Boucles](04-Fiches-revision/F4-Methode-boucles.md) · [F5 Notations](04-Fiches-revision/F5-Axiomes-et-notations.md) · [F6 Pièges et errata](04-Fiches-revision/F6-Pieges-et-errata.md)
 
-## 📊 Organisation et notation
+## ✍️ Travailler un TD
+
+Chaque dossier de TD contient :
+
+| Fichier | À quoi il sert |
+|---|---|
+| `1-Enonce.md` | l'énoncé expliqué, avec des indices à déplier |
+| `2-Mes-reponses.md` | **tes** réponses, avec un squelette déjà prêt |
+| `code/` | **ton** code Python, testé avec `python3 code/tdX.py` |
+
+**Ajouter un nouveau TD ou TP :** copier le dossier [TD-modele](02-TD-TP/TD-modele/1-Enonce.md), le renommer (par exemple `TD7-Mon-theme`) et le remplir.
+
+## 📊 La notation
 
 | Élément | Détail |
 |---|---|
-| Volume | 6 CM + 12 TD de 1h30 = **27 h**, plus environ 27 h de travail personnel |
-| TPA | Travail préparatoire en autonomie : donné en fin de CM, à rendre au TD suivant |
-| TR | Travail de révision : donné chaque semaine en TD, à rendre la semaine suivante |
-| Présence | CM et TD **obligatoires** |
-
-- `TxP` (présence) = `(18 séances − absences injustifiées) / 18`
-- `TxR` (rendus) = `(6 TPA − TPA non rendus) / 6`
-- `NTR` = note des TR (un TR non rendu ⇒ **0**)
-
-| Session | Note finale |
-|---|---|
-| 1ʳᵉ chance | `(2 × DS + TxP × TxR × NTR) / 3` |
+| Cours | 6 CM et 12 TD de 1h30, **présence obligatoire** |
+| TPA | travail préparatoire en autonomie : donné en fin de CM, rendu au TD suivant |
+| TR | travail de révision : donné en TD, rendu la semaine suivante (non rendu = 0) |
+| Note finale | `(2 × DS + TxP × TxR × NTR) / 3` |
 | 2ᵉ chance | `(3 × DS + TxP × TxR × NTR) / 4` |
 
-> ⚠️ Absence : prévenir le chargé de TD **et** le secrétariat (avec justificatif), puis rendre les travaux dès le retour.
+`TxP` = taux de présence, `TxR` = taux de TPA rendus, `NTR` = note des TR.
+En cas d'absence : prévenir le chargé de TD **et** le secrétariat (avec justificatif).
 
 ## 💡 Affichage
 
-- Schémas en **Mermaid** : dans VS Code, ouvre l'aperçu Markdown (`Cmd+Shift+V`). S'ils ne s'affichent pas, installe l'extension *Markdown Preview Mermaid Support*.
-- Les blocs **▶ Réponse** se déplient : cherche d'abord, vérifie ensuite.
-- Coquilles repérées dans les documents d'origine : voir [F6 Pièges et errata](04-Fiches-revision/F6-Pieges-et-errata.md).
+- Les schémas sont en **Mermaid** : dans VS Code, ouvre l'aperçu avec `Cmd+Shift+V`. S'ils ne s'affichent pas, installe l'extension *Markdown Preview Mermaid Support*.
+- Les blocs **▶** se déplient : cherche d'abord, regarde la réponse ensuite.

@@ -1,6 +1,6 @@
 # TD5 — Programmes impératifs
 
-[⬅ TD / TP](../README.md) · Cours : [C5 Programmes impératifs](../../01-Cours/C5-Programmes-imperatifs/README.md) · [Mes réponses](mes-reponses.md) · [Code](code/td5.py)
+[🏠 Accueil](../../00-Commencer-ici.md) · Cours : [C5 Programmes impératifs](../../01-Cours/Chapitre-5-Programmes-imperatifs/1-Cours.md) · [Mes réponses](2-Mes-reponses.md) · [Code](code/td5.py)
 
 ## 🎯 Objectifs
 
@@ -16,6 +16,8 @@
 ---
 
 ## Exercice 1 : Plus faible pré-condition
+
+> 🧠 **En clair :** « à quelle heure partir pour arriver à 8h ? » On part de l'objectif (la post-condition, **en bas**) et on remonte le code ligne par ligne.
 
 **Q1.1** — Post-condition : `a = 0 ∧ b ≠ 0`.
 
@@ -58,6 +60,8 @@ Vérifie tes réponses avec `verifie_wp` dans [code/td5.py](code/td5.py).
 
 ## Exercice 2 : Division euclidienne
 
+> 🧠 **En clair :** les bonbons du chapitre 1 🍬. `q` = tours de distribution, `r` = bonbons restants. Invariant : **donnés + restants = total**, soit `a = q × b + r`.
+
 ```python
 q = 0
 r = a
@@ -90,6 +94,8 @@ res = (q, r)
 ---
 
 ## Exercice 3 : Nombre de diviseurs
+
+> 🧠 **En clair :** les diviseurs vont **par paires** : `42 = 1 × 42 = 2 × 21 = 3 × 14 = 6 × 7`. Il suffit de chercher les **petits** (jusqu'à `√42 ≈ 6,5`) : chacun en apporte deux. Si `n` est un carré (`36 = 6 × 6`), le diviseur `6` ne compte qu'une fois.
 
 ```python
 i = 2

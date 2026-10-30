@@ -1,6 +1,6 @@
 # TD1 — Induction et fonctions numériques
 
-[⬅ TD / TP](../README.md) · Cours : [C1 Induction](../../01-Cours/C1-Induction/README.md) · [Mes réponses](mes-reponses.md) · [Code](code/td1.py)
+[🏠 Accueil](../../00-Commencer-ici.md) · Cours : [C1 Induction](../../01-Cours/Chapitre-1-Prouver-par-induction/1-Cours.md) · [Mes réponses](2-Mes-reponses.md) · [Code](code/td1.py)
 
 ## 🎯 Objectifs
 
@@ -17,6 +17,8 @@
 ---
 
 ## Exercice 1 : Multiplication
+
+> 🧠 **En clair :** `3 × 5`, c'est poser **3 paquets de 5 biscuits** : `5 + 5 + 5`. La fonction ajoute `m` autant de fois que `n` l'indique.
 
 ```haskell
 mult :: Int -> Int -> Int
@@ -39,6 +41,8 @@ Deux cas : `x = 0` et `x ≠ 0`. Pour l'appel `mult (x-1) y`, la pré-condition 
 ---
 
 ## Exercice 2 : Exponentiation rapide
+
+> 🧠 **En clair :** `3⁴ = 3 × 3 × 3 × 3` (3 multiplications). Plus malin : `3² = 9`, puis `9² = 81` (2 multiplications). `expR` coupe l'exposant **en deux** à chaque fois.
 
 ```haskell
 exp :: Int -> Int -> Int
@@ -84,6 +88,8 @@ Trois cas : `b = 0`, `b` pair non nul, `b` impair. Posons `q = b quot 2`. Varian
 ---
 
 ## Exercice 3 : Plus grand facteur premier
+
+> 🧠 **En clair :** on **démonte** un nombre en briques premières : `60 = 2 × 2 × 3 × 5`. On essaie de diviser par 2 tant qu'on peut, puis par 3, par 4, par 5… La dernière brique trouvée (5) est la plus grande.
 
 ```haskell
 pgfpAux :: Int -> Int -> Int
