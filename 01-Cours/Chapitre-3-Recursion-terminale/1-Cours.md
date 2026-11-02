@@ -1,6 +1,6 @@
 # Chapitre 3 — La récursion terminale
 
-[🏠 Accueil](../../00-Commencer-ici.md) · Suite : [Exemples corrigés ➡](2-Exemples-corriges.md) · S'entraîner : [TD3](../../02-TD-TP/TD3-Recursion-terminale/1-Enonce.md)
+[🏠 Accueil](../../README.md) · Suite : [Exemples corrigés ➡](2-Exemples-corriges.md) · [Exercices](3-Exercices.md) · S'entraîner : [TD3](../../02-TD-TP/TD3-Recursion-terminale/1-Enonce.md)
 
 ## ⏱️ Le chapitre en 30 secondes
 

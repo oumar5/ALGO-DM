@@ -1,6 +1,6 @@
 # 📝 Préparer le DS
 
-[🏠 Accueil](../00-Commencer-ici.md) · Sujet : [DS 2024-2025](2-DS-2024-2025-Enonce.md) · [Mes réponses](3-DS-2024-2025-Mes-reponses.md)
+[🏠 Accueil](../README.md) · Sujet : [DS 2024-2025](2-DS-2024-2025-Enonce.md) · [Mes réponses](3-DS-2024-2025-Mes-reponses.md)
 
 ## ⏱️ En 30 secondes
 

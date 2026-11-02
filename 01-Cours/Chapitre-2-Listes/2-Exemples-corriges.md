@@ -1,6 +1,6 @@
 # Chapitre 2 — Exemples corrigés
 
-[⬅ Cours du chapitre 2](1-Cours.md) · [🏠 Accueil](../../00-Commencer-ici.md)
+[⬅ Cours du chapitre 2](1-Cours.md) · [🏠 Accueil](../../README.md) · Suite : [Exercices ➡](3-Exercices.md)
 
 > 🏋️ Lis l'objectif, essaie seule, puis compare. Les exemples vont du **plus facile** au **plus difficile**.
 
@@ -182,3 +182,9 @@ triInsertion (n:l) = inserer n (triInsertion l)
 2. Induction sur `length l`, en utilisant le point 1 pour `inserer n (triInsertion l)`.
 
 </details>
+
+> ✅ La correction complète du point 1 est dans l'[exercice 12](4-Corrections.md).
+
+---
+
+➡ **À toi de jouer :** [Exercices du chapitre](3-Exercices.md) · puis les [corrections](4-Corrections.md).

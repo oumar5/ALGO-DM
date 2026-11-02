@@ -1,6 +1,6 @@
 # F4 — Méthode des boucles (6 étapes)
 
-[🏠 Accueil](../00-Commencer-ici.md)
+[🏠 Accueil](../README.md)
 
 > 💶 **L'idée :** l'**invariant** est la phrase qui ne change jamais, comme « dépensé + restant = budget ». Le **variant** est ce qui diminue, comme l'argent restant.
 

@@ -1,6 +1,6 @@
 # Chapitre 2 — Les listes
 
-[🏠 Accueil](../../00-Commencer-ici.md) · Suite : [Exemples corrigés ➡](2-Exemples-corriges.md) · S'entraîner : [TD2](../../02-TD-TP/TD2-Listes-tri-fusion/1-Enonce.md)
+[🏠 Accueil](../../README.md) · Suite : [Exemples corrigés ➡](2-Exemples-corriges.md) · [Exercices](3-Exercices.md) · S'entraîner : [TD2](../../02-TD-TP/TD2-Listes-tri-fusion/1-Enonce.md)
 
 ## ⏱️ Le chapitre en 30 secondes
 

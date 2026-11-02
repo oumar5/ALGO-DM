@@ -1,6 +1,6 @@
 # F6 — Pièges et errata
 
-[🏠 Accueil](../00-Commencer-ici.md)
+[🏠 Accueil](../README.md)
 
 ## ⚠️ Les 12 erreurs les plus coûteuses
 

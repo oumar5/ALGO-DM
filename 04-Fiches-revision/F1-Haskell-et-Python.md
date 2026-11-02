@@ -1,6 +1,6 @@
 # F1 — Haskell et Python : mémo
 
-[🏠 Accueil](../00-Commencer-ici.md)
+[🏠 Accueil](../README.md)
 
 ## Syntaxe Haskell
 

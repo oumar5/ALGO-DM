@@ -1,6 +1,6 @@
 # TDx — Titre
 
-[🏠 Accueil](../../00-Commencer-ici.md) · Cours lié : [Chapitre x](../../00-Commencer-ici.md) · [Mes réponses](2-Mes-reponses.md) · [Code](code/mon_code.py)
+[🏠 Accueil](../../README.md) · Cours lié : [Chapitre x](../../README.md) · [Mes réponses](2-Mes-reponses.md) · [Code](code/mon_code.py)
 
 > ✏️ **Mode d'emploi :** copie ce dossier, renomme-le (par exemple `TD7-Mon-theme`), puis remplace les `…`.
 

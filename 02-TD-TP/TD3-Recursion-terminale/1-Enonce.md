@@ -1,6 +1,6 @@
 # TD3 — Récursion terminale
 
-[🏠 Accueil](../../00-Commencer-ici.md) · Cours : [C3 Récursion terminale](../../01-Cours/Chapitre-3-Recursion-terminale/1-Cours.md) · [Mes réponses](2-Mes-reponses.md) · [Code](code/td3.py)
+[🏠 Accueil](../../README.md) · Cours : [C3 Récursion terminale](../../01-Cours/Chapitre-3-Recursion-terminale/1-Cours.md) · [Mes réponses](2-Mes-reponses.md) · [Code](code/td3.py)
 
 ## 🎯 Objectifs
 

@@ -1,6 +1,6 @@
 # F5 — Axiomes et notations
 
-[🏠 Accueil](../00-Commencer-ici.md)
+[🏠 Accueil](../README.md)
 
 ## Listes triées et permutations
 

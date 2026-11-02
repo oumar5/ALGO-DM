@@ -1,6 +1,6 @@
 # Chapitre 1 — Prouver qu'un programme est correct
 
-[🏠 Accueil](../../00-Commencer-ici.md) · Suite : [Exemples corrigés ➡](2-Exemples-corriges.md) · S'entraîner : [TD1](../../02-TD-TP/TD1-Induction-numerique/1-Enonce.md)
+[🏠 Accueil](../../README.md) · Suite : [Exemples corrigés ➡](2-Exemples-corriges.md) · [Exercices](3-Exercices.md) · S'entraîner : [TD1](../../02-TD-TP/TD1-Induction-numerique/1-Enonce.md)
 
 ## ⏱️ Le chapitre en 30 secondes
 

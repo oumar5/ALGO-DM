@@ -1,6 +1,6 @@
 # Chapitre 5 — Exemples corrigés
 
-[⬅ Cours du chapitre 5](1-Cours.md) · [🏠 Accueil](../../00-Commencer-ici.md) · Méthode : [F4](../../04-Fiches-revision/F4-Methode-boucles.md)
+[⬅ Cours du chapitre 5](1-Cours.md) · [🏠 Accueil](../../README.md) · Méthode : [F4](../../04-Fiches-revision/F4-Methode-boucles.md) · Suite : [Exercices ➡](3-Exercices.md)
 
 > 🏋️ Chaque preuve suit les **4 vérifications** : ① départ, ② un tour, ③ terminaison, ④ arrivée.
 
@@ -154,3 +154,7 @@ res = res * rem
 ```
 
 À la sortie, `i ≤ 1` (condition fausse) et `i > 0` (I2), donc `i = 1`. Par (I1), `rem × res¹ = aⁿ` ✅
+
+---
+
+➡ **À toi de jouer :** [Exercices du chapitre](3-Exercices.md) · puis les [corrections](4-Corrections.md).

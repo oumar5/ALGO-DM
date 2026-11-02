@@ -1,6 +1,6 @@
 # Chapitre 4 — Les arbres
 
-[🏠 Accueil](../../00-Commencer-ici.md) · Suite : [Exemples corrigés ➡](2-Exemples-corriges.md) · Code : [Logique.hs](code/Logique.hs) · [logique.py](code/logique.py) · S'entraîner : [TD4](../../02-TD-TP/TD4-Arbres-tournois/1-Enonce.md)
+[🏠 Accueil](../../README.md) · Suite : [Exemples corrigés ➡](2-Exemples-corriges.md) · [Exercices](3-Exercices.md) · Code : [Logique.hs](code/Logique.hs) · [logique.py](code/logique.py) · S'entraîner : [TD4](../../02-TD-TP/TD4-Arbres-tournois/1-Enonce.md)
 
 ## ⏱️ Le chapitre en 30 secondes
 

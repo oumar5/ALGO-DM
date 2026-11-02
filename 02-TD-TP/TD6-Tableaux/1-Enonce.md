@@ -1,6 +1,6 @@
 # TD6 — Programmes impératifs et tableaux
 
-[🏠 Accueil](../../00-Commencer-ici.md) · Cours : [C6 Tableaux](../../01-Cours/Chapitre-6-Tableaux/1-Cours.md) · [Mes réponses](2-Mes-reponses.md) · [Code](code/td6.py)
+[🏠 Accueil](../../README.md) · Cours : [C6 Tableaux](../../01-Cours/Chapitre-6-Tableaux/1-Cours.md) · [Mes réponses](2-Mes-reponses.md) · [Code](code/td6.py)
 
 ## 🎯 Objectifs
 

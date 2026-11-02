@@ -1,6 +1,6 @@
 # Chapitre 1 — Exemples corrigés
 
-[⬅ Cours du chapitre 1](1-Cours.md) · [🏠 Accueil](../../00-Commencer-ici.md)
+[⬅ Cours du chapitre 1](1-Cours.md) · [🏠 Accueil](../../README.md) · Suite : [Exercices ➡](3-Exercices.md)
 
 > 🏋️ **Comment utiliser cette page :** lis l'énoncé, **cache la suite**, essaie seule, puis compare.
 > Les encadrés **💬 Pourquoi ?** expliquent chaque étape.
@@ -140,3 +140,7 @@ Prouve : pré `n ≥ 0`, post `somme n = n(n+1)/2`, variant `n`.
 Ce qui achève la preuve par induction. ∎
 
 </details>
+
+---
+
+➡ **À toi de jouer :** [Exercices du chapitre](3-Exercices.md) · puis les [corrections](4-Corrections.md).

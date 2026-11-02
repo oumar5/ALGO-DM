@@ -1,6 +1,6 @@
 # Chapitre 6 — Exemples corrigés
 
-[⬅ Cours du chapitre 6](1-Cours.md) · [🏠 Accueil](../../00-Commencer-ici.md) · Méthode : [F4](../../04-Fiches-revision/F4-Methode-boucles.md)
+[⬅ Cours du chapitre 6](1-Cours.md) · [🏠 Accueil](../../README.md) · Méthode : [F4](../../04-Fiches-revision/F4-Methode-boucles.md) · Suite : [Exercices ➡](3-Exercices.md)
 
 > 🏋️ Les deux preuves suivent les **6 étapes**, dans l'ordre du DS.
 
@@ -132,3 +132,7 @@ La condition est fausse : **soit** `j = 0`, **soit** `l[j−1] ≤ l[j]`.
 - **`l[j−1] ≤ l[j]`** : la carte est plus grande que sa voisine de gauche, donc que tout ce qui est à gauche (trié). Elle est plus petite que tout ce qui est à droite (I2 b). Elle est à sa place ✅
 
 Et le sac n'a pas changé (I3) ✅
+
+---
+
+➡ **À toi de jouer :** [Exercices du chapitre](3-Exercices.md) · puis les [corrections](4-Corrections.md).

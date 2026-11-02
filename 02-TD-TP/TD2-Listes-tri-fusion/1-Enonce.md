@@ -1,6 +1,6 @@
 # TD2 — Induction sur les listes : tri fusion
 
-[🏠 Accueil](../../00-Commencer-ici.md) · Cours : [C2 Listes](../../01-Cours/Chapitre-2-Listes/1-Cours.md) · [Mes réponses](2-Mes-reponses.md) · [Code](code/td2.py)
+[🏠 Accueil](../../README.md) · Cours : [C2 Listes](../../01-Cours/Chapitre-2-Listes/1-Cours.md) · [Mes réponses](2-Mes-reponses.md) · [Code](code/td2.py)
 
 ## 🎯 Objectifs
 

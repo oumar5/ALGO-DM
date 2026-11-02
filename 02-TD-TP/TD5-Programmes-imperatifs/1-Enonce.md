@@ -1,6 +1,6 @@
 # TD5 — Programmes impératifs
 
-[🏠 Accueil](../../00-Commencer-ici.md) · Cours : [C5 Programmes impératifs](../../01-Cours/Chapitre-5-Programmes-imperatifs/1-Cours.md) · [Mes réponses](2-Mes-reponses.md) · [Code](code/td5.py)
+[🏠 Accueil](../../README.md) · Cours : [C5 Programmes impératifs](../../01-Cours/Chapitre-5-Programmes-imperatifs/1-Cours.md) · [Mes réponses](2-Mes-reponses.md) · [Code](code/td5.py)
 
 ## 🎯 Objectifs
 

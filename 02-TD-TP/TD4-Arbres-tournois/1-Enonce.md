@@ -1,6 +1,6 @@
 # TD4 — Structures arborescentes : les tournois
 
-[🏠 Accueil](../../00-Commencer-ici.md) · Cours : [C4 Arbres](../../01-Cours/Chapitre-4-Arbres/1-Cours.md) · [Mes réponses](2-Mes-reponses.md) · [Code](code/td4.py)
+[🏠 Accueil](../../README.md) · Cours : [C4 Arbres](../../01-Cours/Chapitre-4-Arbres/1-Cours.md) · [Mes réponses](2-Mes-reponses.md) · [Code](code/td4.py)
 
 ## 🎯 Objectifs
 

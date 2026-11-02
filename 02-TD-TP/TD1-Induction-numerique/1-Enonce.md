@@ -1,6 +1,6 @@
 # TD1 — Induction et fonctions numériques
 
-[🏠 Accueil](../../00-Commencer-ici.md) · Cours : [C1 Induction](../../01-Cours/Chapitre-1-Prouver-par-induction/1-Cours.md) · [Mes réponses](2-Mes-reponses.md) · [Code](code/td1.py)
+[🏠 Accueil](../../README.md) · Cours : [C1 Induction](../../01-Cours/Chapitre-1-Prouver-par-induction/1-Cours.md) · [Mes réponses](2-Mes-reponses.md) · [Code](code/td1.py)
 
 ## 🎯 Objectifs
 

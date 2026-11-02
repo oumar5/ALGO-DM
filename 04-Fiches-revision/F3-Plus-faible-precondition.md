@@ -1,6 +1,6 @@
 # F3 — Plus faible pré-condition (WP)
 
-[🏠 Accueil](../00-Commencer-ici.md)
+[🏠 Accueil](../README.md)
 
 > ⏰ **L'idée :** pour arriver à 8h avec 40 min de trajet, il faut partir avant 7h20. On part de l'**objectif** (en bas du code) et on **remonte** ligne par ligne.
 

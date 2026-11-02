@@ -1,6 +1,6 @@
 # Chapitre 3 — Exemples corrigés
 
-[⬅ Cours du chapitre 3](1-Cours.md) · [🏠 Accueil](../../00-Commencer-ici.md) · Règles `triée` et `perm` : [F5](../../04-Fiches-revision/F5-Axiomes-et-notations.md)
+[⬅ Cours du chapitre 3](1-Cours.md) · [🏠 Accueil](../../README.md) · Règles `triée` et `perm` : [F5](../../04-Fiches-revision/F5-Axiomes-et-notations.md) · Suite : [Exercices ➡](3-Exercices.md)
 
 ---
 
@@ -131,3 +131,7 @@ fusionne [1,4] [2,3] = 1 : fusionne [4] [2,3] = 1 : 2 : fusionne [4] [3]
 - PTrans relie les deux ✅
 
 Ce qui achève la preuve par induction. ∎
+
+---
+
+➡ **À toi de jouer :** [Exercices du chapitre](3-Exercices.md) · puis les [corrections](4-Corrections.md).

@@ -1,6 +1,6 @@
 # Chapitre 6 — Les tableaux
 
-[🏠 Accueil](../../00-Commencer-ici.md) · Suite : [Exemples corrigés ➡](2-Exemples-corriges.md) · S'entraîner : [TD6](../../02-TD-TP/TD6-Tableaux/1-Enonce.md)
+[🏠 Accueil](../../README.md) · Suite : [Exemples corrigés ➡](2-Exemples-corriges.md) · [Exercices](3-Exercices.md) · S'entraîner : [TD6](../../02-TD-TP/TD6-Tableaux/1-Enonce.md)
 
 ## ⏱️ Le chapitre en 30 secondes
 

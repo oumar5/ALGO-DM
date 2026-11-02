@@ -1,6 +1,6 @@
 # Chapitre 4 — Exemples corrigés
 
-[⬅ Cours du chapitre 4](1-Cours.md) · [🏠 Accueil](../../00-Commencer-ici.md)
+[⬅ Cours du chapitre 4](1-Cours.md) · [🏠 Accueil](../../README.md) · Suite : [Exercices ➡](3-Exercices.md)
 
 > ℹ️ Le cours **énonce** ces deux propriétés. Les preuves ci-dessous sont rédigées pour t'entraîner, avec la méthode du cours.
 
@@ -94,3 +94,7 @@ Notons `e1 = eval val p1` et `e2 = eval val p2`.
 Ce qui achève la preuve par induction. ∎
 
 > 🧪 Le fichier [logique.py](code/logique.py) vérifie cette propriété sur un exemple : `python3 code/logique.py`.
+
+---
+
+➡ **À toi de jouer :** [Exercices du chapitre](3-Exercices.md) · puis les [corrections](4-Corrections.md).
